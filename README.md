@@ -4,3 +4,4 @@ A dashboard that displays the weather for a searched city.When a valid city name
 
 ## Links:
 Repo Link: https://github.com/sahanamai/weather-dashboard
+Deploy Link: https://sahanamai.github.io/weather-dashboard/
