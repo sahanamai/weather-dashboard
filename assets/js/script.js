@@ -1,6 +1,6 @@
 var APIkey = "85ba596a7dffbaacbd7f0be73d53d1db";
 var date = moment().format("l");
-var saveSearch = [];
+var savedSearch = [];
 var latestSearch = [];
 var updateSearch = [];
 
@@ -121,9 +121,9 @@ function saveSearch(searchJSON) {
 
     if (localStorage.getItem("history") == "" || localStorage.getItem("history") == null) {
         // push search to array
-        saveSearch.push(searchJSON);
+        savedSearch.push(searchJSON);
         // stringify and write array to local storage
-        localStorage.setItem("history", JSON.stringify(saveSearch));
+        localStorage.setItem("history", JSON.stringify(savedSearch));
     } else {
         // assign local storage values to last search
         updateSearch = JSON.parse(localStorage.getItem("history"));
